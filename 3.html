@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"><!--中文网站编译-->
+
+<title>天生一对</title>
+
+
+<meta name="author" content="tom">
+<meta http-equiv="refresh" content="60"><!-- 自动刷新-->
+<link rel="stylesheet" type="text/css" href="css.css"><!--css外部链接-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+</head>
+
+<body>
+	
+	
+
+    <div class="loginpage">
+        
+			<div class="logincontainer">
+	<form style="text-align: center;" method="POST">
+      
+		<hr style="padding: 0px;margin: 10px;margin-bottom: 80px;width: 100%">
+		<h1 style="font-size: 30px"><strong>请输入你心目中天生一对的两个人</strong></h1>
+			<div id="labelalign" style="width: 300px;padding-left: 575px;margin-top: 30px;">
+      <label>男方：</label>
+      <input type="text" id="username"  required="required" autofocus="" style="float: right;padding: 0px;"placeholder="请输入男方名"><br>
+      <br>
+      <label>女方：</label>
+      <input type="text" id="password"  required="required" autofocus="" style="float: right;padding: 0px;"placeholder="请输入女方名"><br>
+        </div>
+        
+     <div style="padding-top: 30px">
+        <input  type="button" id="dl" value="确定">
+        
+		<button  type="reset">重置</button>
+        </div>
+        
+        
+		</form>
+</div>
+    </div>
+
+
+
+
+<script>
+
+var aInputs = document.getElementsByTagName('input');
+       
+        var oBtn = document.getElementById('dl');
+        
+        oBtn.onclick = function() {
+            if (aInputs[0].value =="梁英杰" && aInputs[1].value =="陈亚如") {
+                window.location.href='1.html'
+                    
+                } else {
+                            alert('请考虑清楚');
+                           
+                        }
+                   
+               
+            
+        }
+
+        </script>
+</body>
